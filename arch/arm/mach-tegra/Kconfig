@@ -64,6 +64,13 @@ config MACH_ADAM
        help
          Support for all TabletPCs based on the ADAM design.
 
+config MACH_SMBA1002
+       bool "Malata smba1002"
+         depends on ARCH_TEGRA_2x_SOC
+         select MACH_HAS_SND_SOC_TEGRA_ALC5623 if SND_SOC
+       help
+         Support for the Malata smba1002
+
 config MACH_HARMONY
        bool "Harmony board"
        depends on ARCH_TEGRA_2x_SOC
